@@ -117,7 +117,7 @@ export async function createServer(
           .split(',')
           .map((tag) => `#${tag.trim()}`)
           .join(' ')
-        payload.content += `<p>${tagsString}</p>`
+        payload.content += `<p></p><p>${tagsString}</p>`
       }
 
       const upstreamRes = await flomo.client.put('https://flomo.app/api/memo', {
