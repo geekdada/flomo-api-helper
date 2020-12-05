@@ -108,3 +108,11 @@ curl -X "PUT" "https://example.com/helper/memo" \
     - 默认值：`text`
     - 可选值：`text` | `html`
     - 描述：`text` 类型会对 `content` 中的换行符进行处理，并且将内容转换成 flomo 能展示的内容；`html` 类型不会对 `content` 进行转换。flomo 支持展示少量的 HTML 标签，如果你想保存 Markdown 生成的 HTML 请将这里改为 `html`。
+
+## 拓展工具
+
+[Wiki](https://github.com/geekdada/flomo-api-helper/wiki/%E6%8B%93%E5%B1%95) 页面列出了目前基于此 API 开发的拓展工具，欢迎使用。
+
+## License
+
+[MIT](https://github.com/geekdada/flomo-api-helper/blob/master/LICENSE)
