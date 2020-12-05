@@ -73,7 +73,6 @@
     "bin",
     "build",
     "README.md",
-    "README_zh-CN.md",
     "yarn.lock"
   ],
   "engines": {
