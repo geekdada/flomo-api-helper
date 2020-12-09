@@ -1,6 +1,6 @@
 {
   "name": "flomo-api-helper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An API helper for flomoapp.com",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
