@@ -87,7 +87,7 @@ class Flomo {
     await this.preflight()
 
     const res = await this.client.post<{ code: number; message: string }>(
-      'https://flomo.app/api/user/login',
+      'https://flomoapp.com/api/user/login',
       {
         json: {
           email: process.env.FLOMO_EMAIL as string,
@@ -104,7 +104,7 @@ class Flomo {
   }
 
   private async preflight(): Promise<void> {
-    await this.client.get('https://flomo.app/login', {
+    await this.client.get('https://flomoapp.com/login', {
       responseType: 'text',
     })
   }

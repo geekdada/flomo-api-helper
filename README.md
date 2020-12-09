@@ -81,7 +81,7 @@ X-Token: this-project-is-awesome
 
 #### `/api/*`
 
-所有 `https://flomo.app/api/*` 的接口都暴露在了 `/api/*` 路由上，你可以直接发起请求。因为这些接口非公开，恕不提供文档。
+所有 `https://flomoapp.com/api/*` 的接口都暴露在了 `/api/*` 路由上，你可以直接发起请求。因为这些接口非公开，恕不提供文档。
 
 #### `PUT /helper/memo`
 

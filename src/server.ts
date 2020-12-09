@@ -53,14 +53,12 @@ export async function createServer(
   server.events.on('response', (request) => {
     if (request.response instanceof Boom.Boom) {
       server.logger.error(
-        `${request.method.toUpperCase()} ${request.path} ${
-          request.response.output.statusCode
+        `${request.method.toUpperCase()} ${request.path} ${request.response.output.statusCode
         } ${request.response.message}`,
       )
     } else {
       server.logger.info(
-        `${request.method.toUpperCase()} ${request.path} ${
-          request.response.statusCode
+        `${request.method.toUpperCase()} ${request.path} ${request.response.statusCode
         }`,
       )
     }
@@ -120,7 +118,7 @@ export async function createServer(
         payload.content += `<p></p><p>${tagsString}</p>`
       }
 
-      const upstreamRes = await flomo.client.put('https://flomo.app/api/memo', {
+      const upstreamRes = await flomo.client.put('https://flomoapp.com/api/memo', {
         json: payload,
       })
 
@@ -142,7 +140,7 @@ export async function createServer(
     },
     handler: async (request, h) => {
       const url = request.url
-      url.hostname = 'flomo.app'
+      url.hostname = 'flomoapp.com'
       url.port = '443'
       url.protocol = 'https:'
 
@@ -151,8 +149,8 @@ export async function createServer(
         method: request.method,
         ...(_.isPlainObject(request.payload)
           ? {
-              json: request.payload as Record<string, any>,
-            }
+            json: request.payload as Record<string, any>,
+          }
           : null),
       })
 
